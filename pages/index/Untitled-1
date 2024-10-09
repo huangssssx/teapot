@@ -1,0 +1,5 @@
+src="\./images/(.*\.png)"
+:src="`${image_prefix}/c-home/$1`"
+
+url\(\./images/(.*\.png)\)
+url(#{$img_prefix}/c-home/$1)

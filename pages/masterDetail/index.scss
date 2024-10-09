@@ -1,0 +1,423 @@
+@import "~@/vars.scss";
+
+.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 750rpx;
+
+
+    .group {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: flex-start;
+        padding-bottom: 20rpx;
+        background-color: rgba(255, 255, 255, 1);
+        box-sizing: border-box;
+        width: 100%;
+
+        .title {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-family: Source Han Serif CN, Source Han Serif CN;
+            font-weight: 700;
+            font-size: 36rpx;
+            color: #FFFFFF;
+            line-height: 52rpx;
+
+        }
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-self: center;
+            width: 100%;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-self: center;
+                background-color: rgba(191, 132, 68, 1);
+                border-radius: 0;
+                padding-top: 40rpx;
+                width: 100%;
+
+                .bg-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-self: center;
+                    width: 100%;
+
+                    .bg {
+                        align-self: flex-start;
+                        width: 684rpx;
+                        height: 26rpx;
+                        margin-left: 2rpx;
+                    }
+                }
+
+                .wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-self: center;
+                    width: 100%;
+                    padding: 0 12rpx;
+                    margin-top: 34rpx;
+
+                    .icon-left {
+                        align-self: center;
+                        width: 18rpx;
+                        height: 32rpx;
+                        margin-left: 34rpx;
+                    }
+
+                    .tag {
+                        align-self: center;
+                        margin: 0 0 2rpx 240rpx;
+                        font-family: SourceHanSerifCN-Bold;
+                        font-size: 36rpx;
+                        font-weight: 400;
+                        line-height: 52rpx;
+                        color: rgba(255, 255, 255, 1);
+                        white-space: nowrap;
+                    }
+
+                    .group-1 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-self: center;
+                        padding: 14rpx 24rpx;
+                        border: 2rpx solid rgba(255, 255, 255, 0.2);
+                        margin-left: 122rpx;
+                        background-color: rgba(255, 255, 255, 0);
+                        border-radius: 50rpx;
+                        box-sizing: border-box;
+
+                        .view {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-self: center;
+                            margin-left: 2rpx;
+                            background-color: rgba(255, 255, 255, 0.2);
+                            border-radius: 0;
+                            padding-top: 2rpx;
+
+                            .icon {
+                                align-self: center;
+                                width: 118rpx;
+                                height: 34rpx;
+                            }
+                        }
+                    }
+                }
+
+                .wrapper-1 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-self: center;
+                    width: 100%;
+                    padding: 0rpx 22rpx 4rpx 22rpx;
+                    box-sizing: border-box;
+
+                    .group-2 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-self: flex-end;
+                        height: 272rpx;
+                        padding-bottom: 28rpx;
+
+                        .tag-1 {
+                            align-self: flex-start;
+                            overflow: hidden;
+                            max-width: 330rpx;
+                            font-family: Source Han Serif CN, Source Han Serif CN;
+                            font-weight: 700;
+                            font-size: 48rpx;
+                            color: #FFFFFF;
+                            line-height: 68rpx;
+                            text-align: left;
+                            font-style: normal;
+                            text-transform: none;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+
+                        .location {
+                            align-self: flex-start;
+                            overflow: hidden;
+                            max-width: 330rpx;
+                            margin-top: 10rpx;
+                            font-family: Source Han Serif CN, Source Han Serif CN;
+                            font-weight: 500;
+                            font-size: 28rpx;
+                            color: #FFFFFF;
+                            line-height: 48rpx;
+                            text-align: left;
+                            font-style: normal;
+                            text-transform: none;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+
+                        .desc {
+                            align-self: center;
+                            overflow: hidden;
+                            width: 330rpx;
+                            margin-top: 24rpx;
+                            font-family: Source Han Serif CN, Source Han Serif CN;
+                            font-weight: 500;
+                            font-size: 28rpx;
+                            color: #FFFFFF;
+                            line-height: 48rpx;
+                            text-align: left;
+                            font-style: normal;
+                            text-transform: none;
+                            webkit-line-clamp: 2;
+                            webkit-box-orient: vertical;
+                        }
+                    }
+
+                    .image {
+                        align-self: flex-end;
+                        width: 254rpx;
+                        height: 272rpx;
+                        margin-right: 20rpx;
+                    }
+                }
+            }
+
+            .center-container {
+                padding: 0rpx 24rpx;
+
+                .container-1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-self: center;
+                    width: 100%;
+                    padding: 48rpx 0rpx 0rpx;
+
+                    .wrapper-2 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        align-self: flex-start;
+                        width: 100%;
+
+                        .vertical-line {
+                            width: 8rpx;
+                            height: 32rpx;
+                            background-color: #E1560A;
+                            border-radius: 0;
+                        }
+
+                        .word {
+                            font-family: Source Han Serif CN, Source Han Serif CN;
+                            font-weight: 700;
+                            font-size: 32rpx;
+                            color: #131824;
+                            line-height: 46rpx;
+                            text-align: left;
+                            font-style: normal;
+                            text-transform: none;
+                            white-space: nowrap;
+                            margin-left: 10rpx;
+                        }
+                    }
+
+                    .summary {
+                        align-self: center;
+                        overflow: hidden;
+                        margin: 26rpx 4rpx 0 0;
+                        font-family: Source Han Serif CN, Source Han Serif CN;
+                        font-weight: 400;
+                        font-size: 28rpx;
+                        color: #131824;
+                        line-height: 56rpx;
+                        text-align: left;
+                        font-style: normal;
+                        text-transform: none;
+                    }
+
+                    .summary-1 {
+                        align-self: flex-start;
+                        overflow: hidden;
+                        max-width: 690rpx;
+                        margin-left: 6rpx;
+                        font-family: SourceHanSerifCN-Regular;
+                        font-size: 28rpx;
+                        font-weight: 400;
+                        line-height: 56rpx;
+                        color: rgba(19, 24, 36, 1);
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                .container-2 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-self: center;
+                    align-items: center;
+                    width: 100%;
+                    padding: 24rpx 0rpx 0rpx;
+                    background-color: rgba(255, 255, 255, 1);
+                    border-radius: 0;
+
+                    .vertical-line-1 {
+                        align-self: center;
+                        width: 8rpx;
+                        height: 32rpx;
+                        background-color: #E1560A;
+                        border-radius: 0;
+                    }
+
+                    .label {
+                        font-family: Source Han Serif CN, Source Han Serif CN;
+                        font-weight: 700;
+                        font-size: 32rpx;
+                        color: #131824;
+                        line-height: 46rpx;
+                        text-align: left;
+                        font-style: normal;
+                        text-transform: none;
+                        white-space: nowrap;
+                        margin-left: 10rpx;
+                    }
+                }
+
+                .container-3 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-self: center;
+                    width: 100%;
+                    padding: 0 0rpx 0rpx;
+                    margin-top: 40rpx;
+
+                    .section-wrapper-item-0 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-self: center;
+                        width: 100%;
+                        padding: 8px 12px;
+                        box-sizing: border-box;
+                        background: #F5F7FA;
+                        border-radius: 16rpx;
+
+                        .section {
+                            font-family: Source Han Serif CN, Source Han Serif CN;
+                            font-weight: 400;
+                            font-size: 28rpx;
+                            color: #131824;
+                            line-height: 48rpx;
+                            text-align: left;
+                            font-style: normal;
+                            text-transform: none;
+                        }
+                    }
+                }
+
+                .container-4 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-self: center;
+                    width: 100%;
+                    padding: 24rpx 0rpx 0rpx;
+                    background-color: rgba(255, 255, 255, 1);
+                    border-radius: 0;
+
+                    .vertical-line-2 {
+                        align-self: center;
+                        width: 8rpx;
+                        height: 32rpx;
+                        background-color: #E1560A;
+                        border-radius: 0;
+                    }
+
+                    .word-1 {
+                        margin-left: 10rpx;
+                        font-family: Source Han Serif CN, Source Han Serif CN;
+                        font-weight: 700;
+                        font-size: 32rpx;
+                        color: #131824;
+                        line-height: 46rpx;
+                        text-align: left;
+                        font-style: normal;
+                        text-transform: none;
+                    }
+
+                    .panel-wrapper {
+                        position: relative;
+                        width: 100%;
+                        height: 1000rpx;
+                    }
+                }
+            }
+
+
+        }
+
+        .block {
+            position: absolute;
+            display: flex;
+            left: 24rpx;
+            bottom: -512rpx;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 340rpx;
+            padding-bottom: 220rpx;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 16rpx;
+
+            .container-7 {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-self: center;
+                width: 340rpx;
+                height: 340rpx;
+                padding: 46rpx 24rpx 52rpx;
+                background-image: url(#{$img_prefix}/c-home/masterDetail/img_26.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-origin: padding-box;
+
+                .picture {
+                    align-self: flex-start;
+                    width: 248rpx;
+                    height: 242rpx;
+                    margin-left: 38rpx;
+                }
+            }
+        }
+
+        .footer {
+            align-self: center;
+            width: 22rpx;
+            height: 10rpx;
+            margin-top: 82rpx;
+            background-color: rgba(19, 24, 36, 1);
+            border-radius: 5rpx;
+        }
+    }
+}

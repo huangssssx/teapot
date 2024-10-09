@@ -1,0 +1,251 @@
+{
+  "pages": [
+    // {
+    //   "path": "pages/login/index",
+    //   "style": {
+    //     "navigationBarTitleText": "uni-app"
+    //   }
+    // },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/error/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    },
+    {
+      "path": "pages/search/index",
+      "style": {
+        "navigationBarTitleText": "商品搜索"
+      }
+    },
+    {
+      "path": "pages/searchResult/index",
+      "style": {
+        "navigationBarTitleText": "商品搜索结果",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 400
+      }
+    },
+    {
+      "path": "pages/mailDetail/index",
+      "style": {
+        "navigationBarTitleText": "商品详情"
+      }
+    },
+    {
+      "path": "pages/yxQx/index",
+      "style": {
+        "navigationBarTitleText": "阳羡群贤"
+      }
+    },
+    {
+      "path": "pages/masterDetail/index",
+      "style": {
+        "navigationBarTitleText": "名家介绍",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/onePotOneWorld/index",
+      "style": {
+        "navigationBarTitleText": "一壶一世界",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/shopCart/index",
+      "style": {
+        "navigationBarTitleText": "购物车",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/personCenter/index",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/personCenter/data/index",
+      "style": {
+        "navigationBarTitleText": "个人资料",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 400
+      }
+    },
+    {
+      "path": "pages/personCenter/nickname/index",
+      "style": {
+        "navigationBarTitleText": "修改昵称",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 400
+      }
+    },
+    {
+      "path": "pages/fairyland/index",
+      "style": {
+        "navigationBarTitleText": "洞天福地",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/knowPot/index",
+      "style": {
+        "navigationBarTitleText": "知壶者也",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/knowPot/details/index",
+      "style": {
+        "navigationBarTitleText": "详情",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 400
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "usingComponents": {
+      "t-dropdown-menu": "/wxcomponents/tdesign/dropdown-menu/dropdown-menu",
+      "t-dropdown-item": "/wxcomponents/tdesign/dropdown-item/dropdown-item",
+      "t-collapse": "/wxcomponents/tdesign/collapse/collapse",
+      "t-collapse-panel": "/wxcomponents/tdesign/collapse-panel/collapse-panel",
+      "t-icon": "/wxcomponents/tdesign/icon/icon",
+      "t-input": "/wxcomponents/tdesign/input/input",
+      "t-picker": "/wxcomponents/tdesign/picker/picker",
+      "t-picker-item": "/wxcomponents/tdesign/picker-item/picker-item"
+    }
+  },
+  "tabBar": {
+    "color": "#131824",
+    "selectedColor": "#131824",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/default/01.png",
+        "selectedIconPath": "static/tabbar/selected/01.png",
+        "text": "壶中天地"
+      },
+      {
+        "pagePath": "pages/onePotOneWorld/index",
+        "iconPath": "static/tabbar/default/02.png",
+        "selectedIconPath": "static/tabbar/selected/02.png",
+        "text": "一壶一世界"
+      },
+      {
+        "pagePath": "pages/knowPot/index",
+        "iconPath": "static/tabbar/default/03.png",
+        "selectedIconPath": "static/tabbar/selected/03.png",
+        "text": "知壶者也"
+      },
+      {
+        "pagePath": "pages/fairyland/index",
+        "iconPath": "static/tabbar/default/04.png",
+        "selectedIconPath": "static/tabbar/selected/04.png",
+        "text": "洞天福地"
+      },
+      {
+        "pagePath": "pages/personCenter/index",
+        "iconPath": "static/tabbar/default/05.png",
+        "selectedIconPath": "static/tabbar/selected/05.png",
+        "text": "观自在"
+      }
+      // {
+      //   "pagePath": "pages/search/index",
+      //   "iconPath": "static/tabbar/default/05.png",
+      //   "selectedIconPath": "static/tabbar/selected/05.png",
+      //   "text": "观自在"
+      // }
+    ]
+  },
+  "uniIdRouter": {},
+  "condition": {
+    "current": 0,
+    "list": [
+      {
+        "name": "登录",
+        "path": "pages/login/index",
+        "query": ""
+      },
+      {
+        "name": "搜索页面",
+        "path": "pages/search/index",
+        "query": "newsid=5173214"
+      },
+      {
+        "name": "搜索结果页面",
+        "path": "pages/searchResult/index",
+        "query": "keyword=壶"
+      },
+      {
+        "name": "商品详情页面",
+        "path": "pages/mailDetail/index",
+        "query": "id=1198"
+      },
+      {
+        "name": "阳羡群贤",
+        "path": "pages/yxQx/index",
+        "query": ""
+      },
+      {
+        "name": "名家介绍",
+        "path": "pages/masterDetail/index",
+        "query": "author_id=00322"
+      },
+      {
+        "name": "一壶一世界",
+        "path": "pages/onePotOneWorld/index",
+        "query": ""
+      },
+      {
+        "name": "购物车",
+        "path": "pages/shopCart/index",
+        "query": ""
+      },
+      {
+        "name": "个人中心",
+        "path": "pages/personCenter/index",
+        "query": ""
+      },
+      {
+        "name": "个人中心-详情",
+        "path": "pages/personCenter/data/index",
+        "query": ""
+      },
+      {
+        "name": "个人中心-修改昵称",
+        "path": "pages/personCenter/nickname/index",
+        "query": ""
+      },
+      {
+        "name": "洞天福地",
+        "path": "pages/fairyland/index",
+        "query": ""
+      },
+      {
+        "name": "知壶者也",
+        "path": "pages/knowPot/index",
+        "query": ""
+      },
+      {
+        "name": "知壶者也-详情",
+        "path": "pages/knowPot/details/index",
+        "query": ""
+      }
+    ]
+  }
+}

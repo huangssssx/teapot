@@ -1,0 +1,169 @@
+// 主标题
+@mixin mail-title {
+    font-family:
+        Source Han Serif CN,
+        Source Han Serif CN;
+    font-weight: 600;
+    font-size: 32rpx;
+    color: #131824;
+    line-height: 46rpx;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+// 副标题
+@mixin mail-subtitle {
+    font-family:
+        Source Han Serif CN,
+        Source Han Serif CN;
+    font-weight: 400;
+    font-size: 24rpx;
+    color: #939598;
+    line-height: 34rpx;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+// 优惠
+@mixin mail-coupon {
+    min-width: 0rpx;
+    background: rgba(225, 86, 10, 0.1);
+    border-radius: 64rpx 64rpx 64rpx 64rpx;
+    padding: 4rpx 16rpx;
+    box-sizing: border-box;
+
+    font-family:
+        Source Han Serif CN,
+        Source Han Serif CN;
+    font-weight: 400;
+    font-size: 24rpx;
+    color: #e1560a;
+    line-height: 32rpx;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+// 报价
+@mixin mail-price {
+    font-family:
+        Source Han Serif CN,
+        Source Han Serif CN;
+    font-weight: 700;
+    font-size: 24rpx;
+    color: #f64f4f;
+    line-height: 34rpx;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+@mixin title($font-size: 32rpx, $font-weight: 700, $line-height: 58rpx, $color: #1c2123) {
+    font-family:
+        Source Han Serif CN,
+        Source Han Serif CN;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+@mixin size($width: 32rpx, $height: null) {
+    @if $height == null {
+        height: $width;
+    }
+
+    width: $width;
+    height: $height;
+}
+
+@mixin flex($justify: center, $align: center, $gap: 16rpx, $flex-direction: row) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid($row_num: 4, $gap: 16rpx) {
+    display: grid;
+    grid-template-columns: repeat($row_num, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: $gap;
+}
+
+@mixin box-size($padding: 0 0 0 0) {
+    padding: $padding;
+    box-sizing: border-box;
+}
+
+@mixin ellipsis() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin split_line($width: 2rpx, $height: 100%, $color: #ffffff, $position: right, $gap: 0, $mt: 0, $ml: 0) {
+    &::after {
+        content: " ";
+        position: absolute;
+        width: $width;
+        height: $height;
+        background: $color;
+        margin: $mt 0 0 $ml;
+        // opacity: 0.2;
+
+        @if $position == top {
+            top: $gap;
+        }
+
+        @if $position == right {
+            right: $gap;
+        }
+
+        @if $position == bottom {
+            bottom: $gap;
+        }
+
+        @if $position == left {
+            left: $gap;
+        }
+    }
+}
+@mixin selected {
+    .default {
+        width: 40rpx;
+        height: 40rpx;
+        border: 2rpx solid #c2c3c5;
+        border-radius: 50%;
+    }
+
+    .selected {
+        width: 40rpx;
+        height: 40rpx;
+        background-color: #d35400;
+        /* 圆形背景颜色 */
+        border-radius: 50%;
+        /* 圆形 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .selected::before {
+        content: "";
+        width: 8rpx;
+        height: 17rpx;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 8rpx;
+    }
+}
